@@ -1,0 +1,21 @@
+{
+    "name": "tink/omnipay-paytm",
+    "description": "paytm driver for the Omnipay PHP payment processing library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "caoyubing",
+            "email": "qietingfy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Paytm\\": "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "~3.0",
+        "php-http/guzzle6-adapter":"^1.1"
+    }
+}
