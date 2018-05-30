@@ -7,12 +7,12 @@ use Omnipay\Paytm\Common\Signer;
 
 abstract class AbstractRequest extends BaseAbstractRequest
 {
-    protected $stagingEndpoint = 'https://pguat.paytm.com';
-    protected $productionEndpoint = 'https://secure.paytm.in';
+    protected $stagingEndpoint = 'https://securegw-stage.paytm.in';
+    protected $productionEndpoint = 'https://securegw.paytm.in';
 
     protected $methods = [
-        'Purchase' => '/oltp-web/processTransaction',
-        'OrderQuery' => '/oltp/HANDLER_INTERNAL/getTxnStatus',
+        'Purchase' => '/theia/processTransaction',
+        'OrderQuery' => '/merchant-status/getTxnStatus',
     ];
 
     public function getEndPoint($type = null)
